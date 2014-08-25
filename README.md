@@ -8,6 +8,7 @@ There is an UICollectionView bug with the following setup
 * The 1st section has one row
 * This row has a zero height
 * Result => the following visible UICollectionView cells are NOT visible, but the collectionView can be scrolled, looks like that they are hidden
+* I filed a bug report: rdar://18120029
 
 ## Example
 
