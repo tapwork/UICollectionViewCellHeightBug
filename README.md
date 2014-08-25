@@ -9,5 +9,18 @@ There is an UICollectionView bug with the following setup
 * This row has a zero height
 * Result => the following visible UICollectionView cells are NOT visible, but the collectionView can be scrolled, looks like that they are hidden
 
+## Example
+
+Inline-style: 
+![Demo Image](https://raw.githubusercontent.com/tapwork/UICollectionViewHeightBug/master/demo.png)
+
+
+
 ## Possible Workaround              
 Give the 1st section's row a minimum height of 0.1f
+
+
+## How to the see the bug in action?
+* Download demo project
+* Toggle the schemes BUG_OFF, BUG_ON, BUG_Workaround
+
