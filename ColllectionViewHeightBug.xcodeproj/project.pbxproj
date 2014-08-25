@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DADBB16919AB92D400599E07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBB16819AB92D400599E07 /* Foundation.framework */; };
+		DADBB16B19AB92D400599E07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBB16A19AB92D400599E07 /* CoreGraphics.framework */; };
+		DADBB16D19AB92D400599E07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBB16C19AB92D400599E07 /* UIKit.framework */; };
+		DADBB17319AB92D400599E07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DADBB17119AB92D400599E07 /* InfoPlist.strings */; };
+		DADBB17519AB92D400599E07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADBB17419AB92D400599E07 /* main.m */; };
+		DADBB17919AB92D400599E07 /* TWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADBB17819AB92D400599E07 /* TWAppDelegate.m */; };
+		DADBB17C19AB92D400599E07 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBB17A19AB92D400599E07 /* Main_iPhone.storyboard */; };
+		DADBB17F19AB92D400599E07 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBB17D19AB92D400599E07 /* Main_iPad.storyboard */; };
+		DADBB18219AB92D400599E07 /* TWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADBB18119AB92D400599E07 /* TWViewController.m */; };
+		DADBB18419AB92D400599E07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBB18319AB92D400599E07 /* Images.xcassets */; };
+		DADBB18B19AB92D400599E07 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBB18A19AB92D400599E07 /* XCTest.framework */; };
+		DADBB18C19AB92D400599E07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBB16819AB92D400599E07 /* Foundation.framework */; };
+		DADBB18D19AB92D400599E07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADBB16C19AB92D400599E07 /* UIKit.framework */; };
+		DADBB19519AB92D400599E07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DADBB19319AB92D400599E07 /* InfoPlist.strings */; };
+		DADBB19719AB92D400599E07 /* ColllectionViewHeightBugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DADBB19619AB92D400599E07 /* ColllectionViewHeightBugTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DADBB18E19AB92D400599E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DADBB15D19AB92D300599E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADBB16419AB92D300599E07;
+			remoteInfo = ColllectionViewHeightBug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DADBB16519AB92D300599E07 /* ColllectionViewHeightBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColllectionViewHeightBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBB16819AB92D400599E07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DADBB16A19AB92D400599E07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DADBB16C19AB92D400599E07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DADBB17019AB92D400599E07 /* ColllectionViewHeightBug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColllectionViewHeightBug-Info.plist"; sourceTree = "<group>"; };
+		DADBB17219AB92D400599E07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DADBB17419AB92D400599E07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DADBB17619AB92D400599E07 /* ColllectionViewHeightBug-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColllectionViewHeightBug-Prefix.pch"; sourceTree = "<group>"; };
+		DADBB17719AB92D400599E07 /* TWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAppDelegate.h; sourceTree = "<group>"; };
+		DADBB17819AB92D400599E07 /* TWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAppDelegate.m; sourceTree = "<group>"; };
+		DADBB17B19AB92D400599E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DADBB17E19AB92D400599E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DADBB18019AB92D400599E07 /* TWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWViewController.h; sourceTree = "<group>"; };
+		DADBB18119AB92D400599E07 /* TWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWViewController.m; sourceTree = "<group>"; };
+		DADBB18319AB92D400599E07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DADBB18919AB92D400599E07 /* ColllectionViewHeightBugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColllectionViewHeightBugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBB18A19AB92D400599E07 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DADBB19219AB92D400599E07 /* ColllectionViewHeightBugTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColllectionViewHeightBugTests-Info.plist"; sourceTree = "<group>"; };
+		DADBB19419AB92D400599E07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DADBB19619AB92D400599E07 /* ColllectionViewHeightBugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColllectionViewHeightBugTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADBB16219AB92D300599E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBB16B19AB92D400599E07 /* CoreGraphics.framework in Frameworks */,
+				DADBB16D19AB92D400599E07 /* UIKit.framework in Frameworks */,
+				DADBB16919AB92D400599E07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADBB18619AB92D400599E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBB18B19AB92D400599E07 /* XCTest.framework in Frameworks */,
+				DADBB18D19AB92D400599E07 /* UIKit.framework in Frameworks */,
+				DADBB18C19AB92D400599E07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DADBB15C19AB92D300599E07 = {
+			isa = PBXGroup;
+			children = (
+				DADBB16E19AB92D400599E07 /* ColllectionViewHeightBug */,
+				DADBB19019AB92D400599E07 /* ColllectionViewHeightBugTests */,
+				DADBB16719AB92D300599E07 /* Frameworks */,
+				DADBB16619AB92D300599E07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DADBB16619AB92D300599E07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADBB16519AB92D300599E07 /* ColllectionViewHeightBug.app */,
+				DADBB18919AB92D400599E07 /* ColllectionViewHeightBugTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADBB16719AB92D300599E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DADBB16819AB92D400599E07 /* Foundation.framework */,
+				DADBB16A19AB92D400599E07 /* CoreGraphics.framework */,
+				DADBB16C19AB92D400599E07 /* UIKit.framework */,
+				DADBB18A19AB92D400599E07 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DADBB16E19AB92D400599E07 /* ColllectionViewHeightBug */ = {
+			isa = PBXGroup;
+			children = (
+				DADBB17719AB92D400599E07 /* TWAppDelegate.h */,
+				DADBB17819AB92D400599E07 /* TWAppDelegate.m */,
+				DADBB17A19AB92D400599E07 /* Main_iPhone.storyboard */,
+				DADBB17D19AB92D400599E07 /* Main_iPad.storyboard */,
+				DADBB18019AB92D400599E07 /* TWViewController.h */,
+				DADBB18119AB92D400599E07 /* TWViewController.m */,
+				DADBB18319AB92D400599E07 /* Images.xcassets */,
+				DADBB16F19AB92D400599E07 /* Supporting Files */,
+			);
+			path = ColllectionViewHeightBug;
+			sourceTree = "<group>";
+		};
+		DADBB16F19AB92D400599E07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DADBB17019AB92D400599E07 /* ColllectionViewHeightBug-Info.plist */,
+				DADBB17119AB92D400599E07 /* InfoPlist.strings */,
+				DADBB17419AB92D400599E07 /* main.m */,
+				DADBB17619AB92D400599E07 /* ColllectionViewHeightBug-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DADBB19019AB92D400599E07 /* ColllectionViewHeightBugTests */ = {
+			isa = PBXGroup;
+			children = (
+				DADBB19619AB92D400599E07 /* ColllectionViewHeightBugTests.m */,
+				DADBB19119AB92D400599E07 /* Supporting Files */,
+			);
+			path = ColllectionViewHeightBugTests;
+			sourceTree = "<group>";
+		};
+		DADBB19119AB92D400599E07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DADBB19219AB92D400599E07 /* ColllectionViewHeightBugTests-Info.plist */,
+				DADBB19319AB92D400599E07 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADBB16419AB92D300599E07 /* ColllectionViewHeightBug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADBB19A19AB92D400599E07 /* Build configuration list for PBXNativeTarget "ColllectionViewHeightBug" */;
+			buildPhases = (
+				DADBB16119AB92D300599E07 /* Sources */,
+				DADBB16219AB92D300599E07 /* Frameworks */,
+				DADBB16319AB92D300599E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColllectionViewHeightBug;
+			productName = ColllectionViewHeightBug;
+			productReference = DADBB16519AB92D300599E07 /* ColllectionViewHeightBug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DADBB18819AB92D400599E07 /* ColllectionViewHeightBugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADBB19D19AB92D400599E07 /* Build configuration list for PBXNativeTarget "ColllectionViewHeightBugTests" */;
+			buildPhases = (
+				DADBB18519AB92D400599E07 /* Sources */,
+				DADBB18619AB92D400599E07 /* Frameworks */,
+				DADBB18719AB92D400599E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DADBB18F19AB92D400599E07 /* PBXTargetDependency */,
+			);
+			name = ColllectionViewHeightBugTests;
+			productName = ColllectionViewHeightBugTests;
+			productReference = DADBB18919AB92D400599E07 /* ColllectionViewHeightBugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADBB15D19AB92D300599E07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = tapwork;
+				TargetAttributes = {
+					DADBB18819AB92D400599E07 = {
+						TestTargetID = DADBB16419AB92D300599E07;
+					};
+				};
+			};
+			buildConfigurationList = DADBB16019AB92D300599E07 /* Build configuration list for PBXProject "ColllectionViewHeightBug" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DADBB15C19AB92D300599E07;
+			productRefGroup = DADBB16619AB92D300599E07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADBB16419AB92D300599E07 /* ColllectionViewHeightBug */,
+				DADBB18819AB92D400599E07 /* ColllectionViewHeightBugTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DADBB16319AB92D300599E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBB17F19AB92D400599E07 /* Main_iPad.storyboard in Resources */,
+				DADBB18419AB92D400599E07 /* Images.xcassets in Resources */,
+				DADBB17C19AB92D400599E07 /* Main_iPhone.storyboard in Resources */,
+				DADBB17319AB92D400599E07 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADBB18719AB92D400599E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBB19519AB92D400599E07 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADBB16119AB92D300599E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBB17519AB92D400599E07 /* main.m in Sources */,
+				DADBB17919AB92D400599E07 /* TWAppDelegate.m in Sources */,
+				DADBB18219AB92D400599E07 /* TWViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADBB18519AB92D400599E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBB19719AB92D400599E07 /* ColllectionViewHeightBugTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DADBB18F19AB92D400599E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DADBB16419AB92D300599E07 /* ColllectionViewHeightBug */;
+			targetProxy = DADBB18E19AB92D400599E07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DADBB17119AB92D400599E07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBB17219AB92D400599E07 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DADBB17A19AB92D400599E07 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBB17B19AB92D400599E07 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DADBB17D19AB92D400599E07 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBB17E19AB92D400599E07 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DADBB19319AB92D400599E07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBB19419AB92D400599E07 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DADBB19819AB92D400599E07 /* Debug BUG OFF */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug BUG OFF";
+		};
+		DADBB19919AB92D400599E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DADBB19B19AB92D400599E07 /* Debug BUG OFF */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					BUG_OFF,
+				);
+				INFOPLIST_FILE = "ColllectionViewHeightBug/ColllectionViewHeightBug-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug BUG OFF";
+		};
+		DADBB19C19AB92D400599E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				INFOPLIST_FILE = "ColllectionViewHeightBug/ColllectionViewHeightBug-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DADBB19E19AB92D400599E07 /* Debug BUG OFF */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColllectionViewHeightBug.app/ColllectionViewHeightBug";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColllectionViewHeightBugTests/ColllectionViewHeightBugTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = "Debug BUG OFF";
+		};
+		DADBB19F19AB92D400599E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColllectionViewHeightBug.app/ColllectionViewHeightBug";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				INFOPLIST_FILE = "ColllectionViewHeightBugTests/ColllectionViewHeightBugTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		DADBB1A019AB950B00599E07 /* Debug BUG ON */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug BUG ON";
+		};
+		DADBB1A119AB950B00599E07 /* Debug BUG ON */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					BUG_ON,
+				);
+				INFOPLIST_FILE = "ColllectionViewHeightBug/ColllectionViewHeightBug-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug BUG ON";
+		};
+		DADBB1A219AB950B00599E07 /* Debug BUG ON */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColllectionViewHeightBug.app/ColllectionViewHeightBug";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColllectionViewHeightBugTests/ColllectionViewHeightBugTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = "Debug BUG ON";
+		};
+		DADBB1A319AB961A00599E07 /* Debug BUG WORDAROUND */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug BUG WORDAROUND";
+		};
+		DADBB1A419AB961A00599E07 /* Debug BUG WORDAROUND */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					BUG_ON,
+					BUG_WORKAROUND,
+				);
+				INFOPLIST_FILE = "ColllectionViewHeightBug/ColllectionViewHeightBug-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug BUG WORDAROUND";
+		};
+		DADBB1A519AB961A00599E07 /* Debug BUG WORDAROUND */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColllectionViewHeightBug.app/ColllectionViewHeightBug";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColllectionViewHeightBugTests/ColllectionViewHeightBugTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = "Debug BUG WORDAROUND";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADBB16019AB92D300599E07 /* Build configuration list for PBXProject "ColllectionViewHeightBug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBB19819AB92D400599E07 /* Debug BUG OFF */,
+				DADBB1A319AB961A00599E07 /* Debug BUG WORDAROUND */,
+				DADBB1A019AB950B00599E07 /* Debug BUG ON */,
+				DADBB19919AB92D400599E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADBB19A19AB92D400599E07 /* Build configuration list for PBXNativeTarget "ColllectionViewHeightBug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBB19B19AB92D400599E07 /* Debug BUG OFF */,
+				DADBB1A419AB961A00599E07 /* Debug BUG WORDAROUND */,
+				DADBB1A119AB950B00599E07 /* Debug BUG ON */,
+				DADBB19C19AB92D400599E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DADBB19D19AB92D400599E07 /* Build configuration list for PBXNativeTarget "ColllectionViewHeightBugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBB19E19AB92D400599E07 /* Debug BUG OFF */,
+				DADBB1A519AB961A00599E07 /* Debug BUG WORDAROUND */,
+				DADBB1A219AB950B00599E07 /* Debug BUG ON */,
+				DADBB19F19AB92D400599E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADBB15D19AB92D300599E07 /* Project object */;
+}
