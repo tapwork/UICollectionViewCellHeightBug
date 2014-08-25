@@ -1,4 +1,4 @@
-UICollectionViewHeightBug
+UICollectionView Height Bug
 =========================
 
 This demo project demonstrates the UICollectionView's height bug when returning a zero height for the 1st sections 1st row 
