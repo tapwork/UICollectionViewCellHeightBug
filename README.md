@@ -11,11 +11,7 @@ There is an UICollectionView bug with the following setup
 * I filed a bug report: rdar://18120029
 
 ## Example
-
-Inline-style: 
 ![Demo Image](https://raw.githubusercontent.com/tapwork/UICollectionViewHeightBug/master/demo.png)
-
-
 
 ## Possible Workaround              
 Give the 1st section's row a minimum height of 0.1f
