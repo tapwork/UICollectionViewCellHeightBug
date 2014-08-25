@@ -1,13 +1,12 @@
-UICollectionView Height Bug
+UICollectionViewCell Height Bug
 =========================
 
-This demo project demonstrates the UICollectionView's height bug when returning a zero height for the 1st sections 1st row 
-
-There is an UICollectionView bug with the following setup
+This demo project demonstrates the UICollectionViewCell's height bug when the dataSource (controller) returns a zero height for the 1st sections 1st row cell.
+The bug occurs with the following setup:
 * the UICollectionsView has 2 sections
 * The 1st section has one row
-* This row has a zero height
-* Result => the following visible UICollectionView cells are NOT visible, but the collectionView can be scrolled, looks like that they are hidden
+* This row has a zero height for the cell
+* Result => the following UICollectionView cells (in bounds) are NOT visible, but the collectionView can be scrolled, looks like that the cells are hidden
 * I filed a bug report: rdar://18120029
 
 ## Example
