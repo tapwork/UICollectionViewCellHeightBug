@@ -10,4 +10,4 @@ There is an UICollectionView bug with the following setup
 * Result => the following visible UICollectionView cells are NOT visible, but the collectionView can be scrolled, looks like that they are hidden
 
 ## Possible Workaround              
-Give the 1st sections row a minimum height of 0.1f
+Give the 1st section's row a minimum height of 0.1f
