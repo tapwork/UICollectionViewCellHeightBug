@@ -314,45 +314,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DADBB19819AB92D400599E07 /* Debug BUG OFF */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Debug BUG OFF";
-		};
 		DADBB19919AB92D400599E07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,24 +347,6 @@
 			};
 			name = Release;
 		};
-		DADBB19B19AB92D400599E07 /* Debug BUG OFF */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					BUG_OFF,
-				);
-				INFOPLIST_FILE = "ColllectionViewHeightBug/ColllectionViewHeightBug-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = "Debug BUG OFF";
-		};
 		DADBB19C19AB92D400599E07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,28 +359,6 @@
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
-		};
-		DADBB19E19AB92D400599E07 /* Debug BUG OFF */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColllectionViewHeightBug.app/ColllectionViewHeightBug";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColllectionViewHeightBug/ColllectionViewHeightBug-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ColllectionViewHeightBugTests/ColllectionViewHeightBugTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = "Debug BUG OFF";
 		};
 		DADBB19F19AB92D400599E07 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -585,7 +506,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-					BUG_ON,
 					BUG_WORKAROUND,
 				);
 				INFOPLIST_FILE = "ColllectionViewHeightBug/ColllectionViewHeightBug-Info.plist";
@@ -622,7 +542,6 @@
 		DADBB16019AB92D300599E07 /* Build configuration list for PBXProject "ColllectionViewHeightBug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DADBB19819AB92D400599E07 /* Debug BUG OFF */,
 				DADBB1A319AB961A00599E07 /* Debug BUG WORDAROUND */,
 				DADBB1A019AB950B00599E07 /* Debug BUG ON */,
 				DADBB19919AB92D400599E07 /* Release */,
@@ -633,22 +552,22 @@
 		DADBB19A19AB92D400599E07 /* Build configuration list for PBXNativeTarget "ColllectionViewHeightBug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DADBB19B19AB92D400599E07 /* Debug BUG OFF */,
 				DADBB1A419AB961A00599E07 /* Debug BUG WORDAROUND */,
 				DADBB1A119AB950B00599E07 /* Debug BUG ON */,
 				DADBB19C19AB92D400599E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DADBB19D19AB92D400599E07 /* Build configuration list for PBXNativeTarget "ColllectionViewHeightBugTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DADBB19E19AB92D400599E07 /* Debug BUG OFF */,
 				DADBB1A519AB961A00599E07 /* Debug BUG WORDAROUND */,
 				DADBB1A219AB950B00599E07 /* Debug BUG ON */,
 				DADBB19F19AB92D400599E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
